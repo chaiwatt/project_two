@@ -68,14 +68,11 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Project Two
+                    <p>Project Two</p>
+                    <h1>{{$product->name}}</h1>
+                    
                 </div>
 
-                <div class="links">
-                    @foreach ($products as $product)
-                        <a href="{{route('view.product',['id' => $product->id])}}"><h1>{{$product->name}}</h3></a>
-                    @endforeach
-                </div>
             </div>
         </div>
     </body>
